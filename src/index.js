@@ -6,6 +6,7 @@ import App from './App'; //
 import * as serviceWorker from './serviceWorker';
 
 
+
 ReactDOM.render( //App 이 리액트를 통해 만든 사용자 정의 태그 => 즉 컴퍼넌트
   <React.StrictMode>
     <App />
