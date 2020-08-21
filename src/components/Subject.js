@@ -5,7 +5,10 @@ class Subject extends Component { //Subject 라는  Component를 만들겠다는
     render() {
         return (
             <header>
-                <h1>{this.props.title}</h1>
+                <h1><a href="/" onClick={function (e) {
+                    e.preventDefault();
+                    this.props.onChangePage();
+                }.bind(this)} >{this.props.title}</a></h1>
                 {this.props.sub}
             </header>
         );
